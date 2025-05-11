@@ -1,7 +1,7 @@
 <div align="center">
 <h1>MFM-DA</h1>
 <h3>MFM-DA: Instance-Aware Adaptor and Hierarchical Alignment for Efficient Domain Adaptation in Medical Foundation Models</h3>
-<h3>Keywords: **Few-shot domain adaptation**, **Few-shot image generation**, **Foundation model**, **Medical image segmentation**.</h3>
+<h3>Keywords: Few-shot domain adaptation, Few-shot image generation, Foundation model, Medical image segmentation.</h3>
 
 Paper: ([2503.00802](https://www.arxiv.org/abs/2503.00802))
 
@@ -10,6 +10,7 @@ Paper: ([2503.00802](https://www.arxiv.org/abs/2503.00802))
 ## Abstract
 Medical Foundation Models (MFMs), trained on large-scale datasets, have demonstrated superior performance across various tasks. However, these models still struggle with domain gaps in practical applications. Specifically, even after fine-tuning on source-domain data, task-adapted foundation models often perform poorly in the target domain. To address this challenge, we propose a few-shot unsupervised domain adaptation (UDA) framework for MFMs, named MFM-DA, which only leverages a limited number of unlabeled target-domain images. Our approach begins by training a Denoising Diffusion Probabilistic Model (DDPM), which is then adapted to the target domain using a proposed dynamic instance-aware adaptor and a distribution direction loss, enabling the DDPM to translate source-domain images into the target domain style. The adapted images are subsequently processed through the MFM, where we introduce a designed channel-spatial alignment Low-Rank Adaptation (LoRA) to ensure effective feature alignment. Extensive experiments on optic cup and disc segmentation tasks demonstrate that MFM-DA outperforms state-of-the-art methods. Our work provides a practical solution to the domain gap issue in real-world MFM deployment.
 
+![Main Model](./Model.png)
 ## Getting Started
 ### Installation
 
@@ -76,7 +77,7 @@ python -m deeplearning.training.run_training_unet
 ```
 
 
-## Citation :heart_eyes: :fire:
+## Citation
 If you find this repo useful for your research, please consider citing the paper as follows:
 ```
 @article{jiang2025mfm,
