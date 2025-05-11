@@ -16,7 +16,7 @@ Medical Foundation Models (MFMs), trained on large-scale datasets, have demonstr
 ## Getting Started
 ### Installation
 
-**Clone the vHeat repository:**
+**Clone the MFM-DA repository:**
 
 To get started, first clone the MFM-DA repository and navigate to the project directory:
 
@@ -39,7 +39,7 @@ To train DDPM model on REFUGE_train (./Syn/DDPM/DDPM_train.zip), use the followi
 cd MFM-DA/Syn/DDPM
 python diffusion.py
 ```
-We also provide the pre-trained DDPM model `model_29000.pth` in `MFM-DA/Syn/DDPM_pretrained_model`. (29000 epochs)
+We also provide the pre-trained DDPM model `model_29000.pth` in [MFM-DA Project Baidu Netdisk](https://pan.baidu.com/s/1z1P60l6bRBT75YeX0zyhpQ?pwd=gnd9). (29000 epochs)
 
 To train MFM-DA-Syn model on REFUGE_train, use the following commands for different configurations:
 ```bash
