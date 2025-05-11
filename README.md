@@ -25,12 +25,12 @@ git clone https://github.com/HopkinsKwong/MFM-DA.git
 cd MFM-DA
 ```
 
-## Data Preparation
+### Data Preparation
 We utilize the publicly available [RIGA+](https://zenodo.org/record/6325549) dataset for our experiments. 
 
 * The ***preprocessed data*** in this article, you can download it ***directly*** via [Baidu Netdisk](https://pan.baidu.com/s/1400JPodPk_zkcBGCspgMfQ?pwd=9dpo) or [Google Drive](https://drive.google.com/file/d/1lIBJTbRy2v6l3zary3YkXp4ZOwDPcrWl/view?usp=sharing) (please cite this article and the REFUGE dataset literature).
 
-### Model Training and Inference
+## Model Training and Inference
 
 **Synthesis**
 
