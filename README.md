@@ -6,6 +6,7 @@
 Paper: ([2503.00802](https://www.arxiv.org/abs/2503.00802))
 
 </div>
+
 ![Main Model](./Model.png)
 
 ## Abstract
