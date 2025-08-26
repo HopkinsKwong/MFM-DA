@@ -94,7 +94,7 @@ for epoch in range(100000):
             t = torch.ones(len(real_image)).long().to('cuda') * noise_step
             noises = diffusion.p_losses(real_image, t, return_x=True)
             # sample_step 50 改为 1000
-            output_image_cond=diffusion.ddim_sample(real_image.shape,condition=condition,sample_step=50,max_step=noise_step)
+            output_image_cond=diffusion.ddim_sample(real_image.shape,condition=condition,sample_step=1000,max_step=noise_step)
             save_image(torch.cat([condition,noises,output_image_cond],dim=0),os.path.join(output_dir,'images/%d.png'%global_step),nrow=batch_size)
             torch.save(diffusion.state_dict(),os.path.join(output_dir,'models/%d.pt'%global_step))
         global_step += 1
